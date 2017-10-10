@@ -9,7 +9,8 @@ import UIKit
 
 class ViewController: UIViewController
 {
-    @IBOutlet weak var firstButton: UIButton!
+
+    @IBOutlet var firstButton: UIButton!
     
     override func viewDidLoad()
     {
@@ -28,6 +29,8 @@ class ViewController: UIViewController
             firstButton.backgroundColor = .magenta
         }
         view.backgroundColor = createRandomColor()
+    }
+    @IBAction func clickedButton(_ sender: UIButton) {
     }
     
     private func createRandomColor() -> UIColor
