@@ -9,8 +9,7 @@ import UIKit
 
 class ViewController: UIViewController
 {
-
-    @IBOutlet var firstButton: UIButton!
+    @IBOutlet weak var firstButton: UIButton!
     
     override func viewDidLoad()
     {
@@ -20,17 +19,17 @@ class ViewController: UIViewController
     
     @IBAction func firstMethod(_ sender: UIButton)
     {
-        if (firstButton.backgroundColor == .magenta)
+        if (firstButton.backgroundColor == .orange)
         {
-            firstButton.backgroundColor = .cyan
+            firstButton.backgroundColor = .green
         }
         else
         {
-            firstButton.backgroundColor = .magenta
+            firstButton.backgroundColor = .orange
         }
         view.backgroundColor = createRandomColor()
-    }
-    @IBAction func clickedButton(_ sender: UIButton) {
+        firstButton.setTitleColor(createRandomColor(), for: .normal)
+        firstButton.backgroundColor = createRandomColor()
     }
     
     private func createRandomColor() -> UIColor
@@ -49,5 +48,4 @@ class ViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-}
-
+}/
