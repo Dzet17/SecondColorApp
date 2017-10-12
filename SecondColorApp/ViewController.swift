@@ -32,6 +32,16 @@ class ViewController: UIViewController
         firstButton.backgroundColor = createRandomColor()
     }
     
+    
+    @IBOutlet weak var STOutlet: UIStepper!
+    
+    @IBAction func STAction(_ sender: Any)
+    {
+        if (firstButton.size = 15,
+        {
+                firstButton.title = "Keep on Clicking me"
+        }
+    }
     private func createRandomColor() -> UIColor
     {
         let newColor :UIColor
@@ -48,4 +58,4 @@ class ViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-}/
+}
