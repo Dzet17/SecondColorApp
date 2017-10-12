@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  ColorTools.swift
 //  SecondColorApp
 //
 //  Created by Zettler, Dylan on 10/12/17.
@@ -8,4 +8,7 @@
 
 import UIKit
 
-
+public class ColorTools
+{
+    public func createColor
+}

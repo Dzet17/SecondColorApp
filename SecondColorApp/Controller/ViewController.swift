@@ -9,6 +9,10 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    lazy var colorTool : ColorTools = colorTools()
+    
+    
+    
     @IBOutlet weak var firstButton: UIButton!
     
     override func viewDidLoad()
@@ -19,6 +23,10 @@ class ViewController: UIViewController
     
     @IBAction func firstMethod(_ sender: UIButton)
     {
+        view.backgroundColor = colorTool.createColor()
+        firstButton.setTitleColor(colorTool.ceateColor(), for: .normal)
+        firstButton.backgroundColor = colorTool.createColor()
+        
         if (firstButton.backgroundColor == .orange)
         {
             firstButton.backgroundColor = .green
