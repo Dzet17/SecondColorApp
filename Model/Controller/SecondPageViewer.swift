@@ -1,5 +1,5 @@
 //
-//  ColorTools.swift
+//  File.swift
 //  SecondColorApp
 //
 //  Created by Zettler, Dylan on 10/12/17.
@@ -8,7 +8,8 @@
 
 import UIKit
 
-public class ColorTools
+public class SecondPageViewController: UIViewController
 {
-    public func createColor
+    
+    
 }

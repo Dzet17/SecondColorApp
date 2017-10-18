@@ -47,7 +47,7 @@ class ViewController: UIViewController
     {
         if (firstButton.size = 15,
         {
-                firstButton.title = "Keep on Clicking me"
+            firstButton.title = "Click me!"
         }
     }
     private func createRandomColor() -> UIColor
